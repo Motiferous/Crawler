@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Documents.iml" filepath="$PROJECT_DIR$/Documents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RESTAPI/RESTAPI.iml" filepath="$PROJECT_DIR$/RESTAPI/RESTAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UI/UI.iml" filepath="$PROJECT_DIR$/UI/UI.iml" />
+    </modules>
+  </component>
+</project>

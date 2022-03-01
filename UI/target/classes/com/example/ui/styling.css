@@ -1,0 +1,65 @@
+.label{
+  -fx-font-family: 'Cambay', sans-serif;
+  -fx-font-size: 1em;
+
+}
+#Title{
+  -fx-position: relative;
+  -fx-margin: auto;
+  -fx-height: 0.71em;
+  -fx-color: transparent;
+  -fx-font-family: 'Cambay', sans-serif;
+  -fx-font-size: 7em;
+  -fx-font-weight: 700;
+  -fx-letter-spacing: -0.02em;
+  -fx-line-height: 1.03em;
+  -fx-text-fill: linear-gradient(to right, dodgerblue, orangered);
+}
+#Title2{
+  -fx-word-wrap: break-word;
+  -fx-position: relative;
+  -fx-margin: auto;
+  -fx-color: transparent;
+  -fx-text-fill: #af0505;
+  -fx-font-family: 'Cambay', sans-serif;
+  -fx-font-size: 1.3em;
+  -fx-font-weight: 700;
+  -fx-letter-spacing: -0.02em;
+  -fx-line-height: 1.03em;
+}
+.text-field{
+  -fx-font-family: 'Cambay', sans-serif;
+  -fx-font-size: 1em;
+
+}
+.radio-button{
+  -fx-font-family: 'Cambay', sans-serif;
+  -fx-font-size: 1em;
+}
+text-area{
+  -fx-font-family: 'Cambay', sans-serif;
+  -fx-font-size: 1em;
+
+}
+.button {
+  -fx-display: block;
+  -fx-position: relative;
+  -fx-margin: 0.5em 0;
+  -fx-padding: .8em 2.2em;
+  -fx-cursor: pointer;
+
+  -fx-background: #FFFFFF;
+  -fx-background-color: linear-gradient(to right, dodgerblue, rgba(118, 60, 173, 0.65), orangered);
+  -fx-border: none;
+  -fx-border-radius: .4em;
+
+  -fx-text-transform: uppercase;
+  -fx-font-size: 1.4em;
+  -fx-font-family: "Work Sans", sans-serif;
+  -fx-font-weight: 500;
+  -fx-letter-spacing: 0.04em;
+
+  mix-blend-mode: color-dodge;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
