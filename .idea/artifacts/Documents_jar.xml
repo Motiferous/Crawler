@@ -2,9 +2,6 @@
   <artifact type="jar" name="Documents:jar">
     <output-path>$PROJECT_DIR$/out/production/Documents</output-path>
     <root id="archive" name="Documents.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/../Desktop/Test/Here/META-INF/MANIFEST.MF" />
-      </element>
       <element id="module-output" name="Documents" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/jsoup-1.14.3.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-lang3-3.12.0.jar" path-in-jar="/" />

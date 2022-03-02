@@ -95,6 +95,8 @@ public class LinksController {
     //Function sets the text to input file and then sends the results to run.sh file to be processed.
     @SneakyThrows
     public String getResults(Links link) {
+        //GET input.txt PATH MANUALLY FROM production FOLDER
+
         File file = new File("/home/kristupasj/Documents/out/production/input.txt");
         file.createNewFile();
 
@@ -103,9 +105,10 @@ public class LinksController {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
+        //GET run.sh PATH MANUALLY FROM production FOLDER
         Process proc = Runtime.getRuntime().exec("/home/kristupasj/Documents/out/production/run.sh");
         proc.waitFor();
+        //GET output.txt PATH MANUALLY FROM production FOLDER
         return Files.readString(Path.of("/home/kristupasj/Documents/out/production/output.txt"), StandardCharsets.US_ASCII);
 
     }
@@ -127,11 +130,18 @@ public class LinksController {
         for (String s : answers) {
             order.add(Integer.valueOf(s.substring(s.lastIndexOf(',') + 1).trim()));
         }
+        int n = order.size();
         int index;
-        for (int i = 0; i < order.size() - 1; i++) {
-            index = order.indexOf(Collections.max(order));
+        List<Integer> temp = new ArrayList<>();
+
+        for (int i = 0; i < order.size()-1; i++) {
+            temp = order.subList(i,n);
+            index = temp.indexOf(Collections.max(temp))+i;
+
+
             Collections.swap(answers, i, index);
             Collections.swap(order, i, index);
+
         }
 
 
